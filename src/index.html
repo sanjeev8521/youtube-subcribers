@@ -131,7 +131,7 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
             <input type="text" id="subscriberIdInput" placeholder="Enter ID">
             <button id="subscriberIdButton">Subscriber by ID</button>
         </div>
-        <h5><b> Demo id :- </b> ( 652d5b393d490241288de6ec )</h5>
+        <h5><b> Demo id :- </b> ( 67a2344d1969b3460cffd7ce )</h5>
         <a href="https://youtu.be/VExT2cpneew?si=7CvsF7n5fJG-Cyh6" target="_blank">
             <img src="./Images/Youtube.png" style="width: 5%" alt="YouTube Logo">
             </a>
@@ -170,13 +170,13 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
                 // Redirect to "/subscribers"
-                window.location.href = "https://get-youtube-subscribers-40mk.onrender.com/subscribers";
+                window.location.href = "http://localhost:3000/subscribers";
             });
 
             // Add a click event listener to the "Subscriber by Name" button
             subscriberNameButton.addEventListener("click", function() {
                 // Redirect to "/subscribers/name"
-                window.location.href = "https://get-youtube-subscribers-40mk.onrender.com/subscribers/name";
+                window.location.href = "http://localhost:3000/subscribers/name";
             });
 
             // Add a click event listener to the "Subscriber by ID" button
@@ -189,13 +189,13 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
                     alert("Please enter an ID.");
                 } else {
                     // Redirect to "/subscribers/:id" with the specific ID
-                    window.location.href = "https://get-youtube-subscribers-40mk.onrender.com/subscribers/" + specificId;
+                    window.location.href = "http://localhost:3000/subscribers/" + specificId;
                 }
             });
              // Add a click event listener to the "API Docs" button
              apiDocsButton.addEventListener("click", function() {
     // Open the API documentation link in a new tab
-    window.open("https://get-youtube-subscribers-40mk.onrender.com/api-docs/", "_blank");
+    window.open("http://localhost:3000/api-docs/", "_blank");
 });
    });
 
